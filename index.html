@@ -68,7 +68,7 @@
         <div class="col-lg-6">
 <div class="input-group">
     <span class="input-group-addon">Nombre del tema</span>
-    <input id="nombre" type="text" class="form-control" name="msg" value="Inducción ISO 20000" disabled>
+    <input id="nombre" type="text" class="form-control" name="msg" value="Trabajo en equipo y comunicación efectiva" disabled>
   </div>
           <hr>
   </div>
@@ -79,14 +79,14 @@
 </div>
 <div class="input-group">
     <span class="input-group-addon">Lugar</span>
-    <input id="lugar" type="text" class="form-control" name="msg" value="Gabriel Mancera" disabled>
+    <input id="lugar" type="text" class="form-control" name="msg" value="Grupo ROM" disabled>
   </div>
   </div>
   <div class="col-lg-6">
 
 <div class="input-group">
     <span class="input-group-addon">Nombre del Expositor 1</span>
-    <input id="expo1" type="text" class="form-control" name="msg" value="César Sánchez Rice" disabled>
+    <input id="expo1" type="text" class="form-control" name="msg" value="Alma Rosa Oliva Guerrero" disabled>
   </div>
 <div class="input-group">
     <span class="input-group-addon">Nombre del Expositor 2</span>
@@ -406,7 +406,7 @@ var x = "";
 y = x();
 
   function writeUserData(TipoCapacitacion, NombreCapacitacion, Fecha, Lugar, ExpositorUno, ExpositorDos){
-    return firebase.database().ref('gestriesgos/' +'encuesta'+ y ).set({
+    return firebase.database().ref('trabajoenequipo/' +'encuesta-'+ y ).set({
   TipoCapacitacion: $('input[name=optradio-1]:checked').val(),
   NombreCapacitacion:$('#nombre')["0"].value,
   Fecha:$('#fecha')["0"].value,
