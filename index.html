@@ -68,14 +68,14 @@
         <div class="col-lg-6">
 <div class="input-group">
     <span class="input-group-addon">Nombre del tema</span>
-    <input id="nombre" type="text" class="form-control" name="msg" value="Buenas prácticas en llamadas entrantes y salientes" disabled>
+    <input id="nombre" type="text" class="form-control" name="msg" value="Inducción a la LFPDPPP y Derechos ARCO" disabled>
   </div>
           <hr>
   </div>
   <div class="col-lg-6">
 <div class="input-group">
     <span class="input-group-addon">Fecha</span>
-    <input id="fecha" type="date" value="2017-10-13"  disabled>
+    <input id="fecha" type="date" value="2017-10-17"  disabled>
 </div>
 <div class="input-group">
     <span class="input-group-addon">Lugar</span>
@@ -86,7 +86,7 @@
 
 <div class="input-group">
     <span class="input-group-addon">Nombre del Expositor 1</span>
-    <input id="expo1" type="text" class="form-control" name="msg" value="Jaime Pablo Jiménez Cepeda" disabled>
+    <input id="expo1" type="text" class="form-control" name="msg" value="Alma Rosa Oliva Guerrero" disabled>
   </div>
 <div class="input-group">
     <span class="input-group-addon">Nombre del Expositor 2</span>
@@ -406,7 +406,7 @@ var x = "";
 y = x();
 
   function writeUserData(TipoCapacitacion, NombreCapacitacion, Fecha, Lugar, ExpositorUno, ExpositorDos){
-    return firebase.database().ref('BPLlamadasEyS/' +'encuesta-'+ y ).set({
+    return firebase.database().ref('LFPDPPP2017OCT/' +'encuesta-'+ y ).set({
   TipoCapacitacion: $('input[name=optradio-1]:checked').val(),
   NombreCapacitacion:$('#nombre')["0"].value,
   Fecha:$('#fecha')["0"].value,
